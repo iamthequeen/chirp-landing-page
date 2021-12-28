@@ -1,0 +1,236 @@
+
+body {
+    background-color: #daf0fe;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container {
+    width: 60em;
+    background-color: #f9f8f3;
+    margin: auto; 
+    justify-content: center;
+    padding: 2em 4em;
+    border-radius: 18px;
+    display: flex;
+}
+
+.subcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h1 {
+    color: #327ce2;
+    font-size: 16px;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 14px;
+    padding-left: 2em;
+    color: rgb(85, 80, 80);
+}
+
+a:nth-child(3) {
+    padding-right: 1em;
+}
+
+.twitter-sign-in {
+    background-color: #17a3fa;
+    color: white;
+    padding: 11px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-words {
+    padding-left: 0.5em;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu {
+    display: none;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3em;
+
+}
+
+.column-1 {
+    margin-top: 4em;
+}
+
+.big-heading {
+    width: 11em;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    color: dimgray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.description {
+    width: 33em;
+}
+
+.two-links {
+    display: flex;
+}
+
+.first-link {
+    width: 160px;
+    margin-right: 1em;
+}
+
+#learn-more {
+    display: flex;
+    align-items: center;
+    color: #0872A3;
+    font-weight: 600;
+}
+
+.arrow {
+    padding: 10px 3px;
+    margin-top: 2px;
+}
+
+.user-profiles {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 1.25em;
+    margin-top: 1.5em;
+}
+
+.user-profiles img {
+    margin-left: -1.4rem;
+}
+
+.mini-summary {
+    width: 30em;
+}
+
+.blue-number {
+    color: #0872A3;
+    font-weight: bold;
+}
+
+.column-2 {
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image {
+    width: 22em;
+}
+
+
+@media (max-width: 1036px) {
+    .main-container {
+        width: 60%;
+        padding: 1em 2em;
+        margin-bottom: -2em;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+
+    .big-heading {
+        font-size: 30px;
+    }
+
+    nav a, .twitter-sign-in {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .two-columns {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .column-1 {
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .description, .hero-image, .big-heading {
+        width: 100%;
+    }
+
+    .first-link {
+        display: flex;
+    }
+
+    .mini-summary {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .big-heading {
+        font-size: 20px;
+    }
+    
+    .twitter-sign-in {
+        padding: 5px;
+        width: 100%;
+    }
+    
+    .sign-in-words {
+        font-size: 10px;
+    }
+
+    #learn-more {
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .arrow {
+        padding: 0;
+    }
+
+    .user-profiles {
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .user-profiles img {
+        width: 50%;
+        margin-right: -0.3em;
+    }
+}
+
